@@ -1,0 +1,835 @@
+/* Small Header */
+.small-header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-header .welcome-message {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.small-header .social-icons {
+    margin-left: auto;
+    text-align: right;
+}
+
+.small-header .social-icons a {
+    color: #fff;
+    margin-left: 15px; /* Increase space between icons */
+    font-size: 20px; /* Adjust icon size if needed */
+    transition: color 0.3s ease;
+}
+
+.small-header .social-icons a:hover {
+    color: #1a73e8; /* Add a hover color effect */
+}
+/* Main Header */
+header {
+    background-color: #5a9de4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    max-width: 200px;
+    max-height: 100px; /* Adjust the height of the logo */
+    border-radius: 50px;
+    border-color: #4213c4;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #1a1717;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    background-color: #252424;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .icons {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0f0f0f;
+}
+
+.hero .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #2f80d6;
+    border: 2px solid #709dce;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* About Section */
+.about {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about .col-md-6 {
+    flex: 1;
+    padding: 15px;
+}
+
+.about img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #121213;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+}
+
+.about .btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.about .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about .container {
+        flex-direction: column;
+    }
+
+    .about img {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-content {
+        max-width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-content h2, .about-content p {
+        text-align: center;
+    }
+}
+
+
+/* Why Choose Us Section */
+.why-choose {
+    padding: 5rem 0;
+    background-color: #90a6e2;
+}
+
+.why-choose .container {
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2.5rem;
+    color: #242525;
+    margin-bottom: 1rem;
+}
+
+.why-choose p {
+    font-size: 1.125rem;
+    color: #35373a;
+    margin-bottom: 2rem;
+}
+
+.why-choose .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.why-choose .col {
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+}
+
+.why-choose i {
+    color: #1a1b1b; /* Primary color for icons */
+}
+
+.why-choose h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.why-choose .col p {
+    font-size: 1rem;
+    color: #303233;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .why-choose h2 {
+        font-size: 2rem;
+    }
+
+    .why-choose .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-choose .col {
+        max-width: 100%;
+    }
+}
+
+/* laundry heroe */
+.laundry-heroes {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.laundry-heroes .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.laundry-heroes .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.laundry-heroes .col-md-6 {
+    flex: 1;
+    padding: 15px;
+}
+
+.laundry-heroes img {
+    max-width: 0%;
+    border-radius: 10px;
+}
+
+.laundry-heroes h2 {
+    font-size: 2.5rem;
+    color: #121213;
+    margin-bottom: 1rem;
+}
+
+.laundry-heroes p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+}
+
+.laundry-heroes .btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.laundry-heroes.btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .laundry-heroes.container {
+        flex-direction: column;
+    }
+
+    .laundry-heroes img {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .laundry-heroes-image, .laundry-heroes-content {
+        max-width: 80%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .laundry-heroes-image {
+        margin-bottom: 20px;
+    }
+
+    .laundry-heroes-content h2, .laundry-heroes-content p {
+        text-align: center;
+    }
+}
+
+  
+
+/*laundry services*/
+.laundry-services {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute cards evenly */
+    flex-wrap: wrap; /* Wrap cards to multiple rows if needed */
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    width: 30%; /* Adjust card width as needed */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+ 
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .laundry-heroes .content, .laundry-heroes .image-container {
+        width: 100%; /* Full width on smaller screens */
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .laundry-heroes .content {
+        margin-bottom: 2rem; /* Adds space between text and image on small screens */
+    }
+}
+   
+.disclaimer {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+
+ Laundry Services Section 
+.laundry-services {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+.laundry-services h2 {
+    font-size: 2.5rem;
+    color: #1b1c1d; 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Ensures equal space between cards */
+    flex-wrap: wrap;
+} 
+
+ .card {
+    width: calc(30% - 20px); /*Adjust width based on number of cards and margins*/
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+     background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+} 
+
+    /*Slight lift on hover*/
+    box-sha.card:hover {
+    transform: translateY(-10px); /*dow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    }
+ .card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+} 
+ .card-body h3 {
+    font-size: 1.5rem;
+    color: #1e1e1f; /*Primary color for service title */
+     margin-bottom: 1rem;
+} 
+  .card-body p {
+    font-size: 1rem;
+    color: #6c757d; /* Gray color for text */
+    margin-bottom: 1rem;
+    line-height: 1.6;
+} 
+ .btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+ .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+} 
+
+.disclaimer {
+    font-size: 1rem;
+    color: #6c757d; /* Gray color for disclaimer */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(45% - 20px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); /* Full width cards on small screens */
+    }
+}
+
+
+
+/* Service Steps Section */
+.service-steps {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.promo-banner {
+    background: #00aaff;
+    color: #272525;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-steps h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #252323;
+}
+
+.service-steps p {
+    font-size: 1em;
+    color: #1f1c1c;
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Ensures all steps stay in one row */
+    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+}
+
+.step {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1; /* Distributes equal width to each step */
+}
+
+.step-number {
+    background: #00aaff;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5em;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3a3737;
+}
+
+.step p {
+    color: #272222;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Get Started Button */
+.get-started {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.get-started:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 0;
+    text-align: center;
+  
+}
+
+.pricing-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+   
+
+}
+
+.pricing .item img {
+    max-width: 200%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    
+}
+
+.pricing .item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-pricing {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+ .btn-pricing:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+
+/* General styling for the section */
+.request {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    padding: 40px 10px;
+    background-color: #fcfcfd;
+    min-height: 300px; /* Ensures there's some height to the section */
+}
+
+.request .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally within the container */
+    text-align: center; /* Center text within each item */
+}
+
+.request h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333; /* Darker color for the heading */
+}
+
+.request p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: #666; /* Medium color for the paragraph */
+}
+
+.request button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.about .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.reviews-container {
+    background: #5a9de4;
+    color: #0a0a0a;
+    padding: 60px 0;
+    text-align: center;
+   
+}
+
+.review-text {
+    font-size: 1.2em;
+    color: #000;
+    margin: 20px 0;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #0a17d3;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot:hover, .dot.active {
+    background-color: #717171;
+}
+
+
+
+.footer-container {
+    background-color: #1a1a2e; /* Very dark blue background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex-basis: 23%; /* 4 columns */
+    margin: 10px;
+  }
+  
+  .column h3 {
+    color: #f2f2f2; /* Lighter text color for headings */
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .column ul li a:hover {
+    opacity: 0.8;
+  }
+  
+  .contact-icons {
+    margin-bottom: 10px;
+  }
+  
+  .contact-icons a {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #ffffff; /* Set a color that contrasts with the background */
+  }
+  
+  
+  
+  .contact-icons a:hover {
+    opacity: 0.8;
+  }
+  
+  .footer-bottom {
+    background-color: #2f2f4f; /* Darker secondary background for bottom */
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,53 @@
+/* Container for the terms and conditions page */
+.terms-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.terms-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0A3449;
+}
+
+.terms-container p, .terms-container ul {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.terms-container ul {
+    padding-left: 20px;
+}
+
+.terms-container ul li {
+    margin-bottom: 10px;
+}
+
+.terms-container a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0A3449;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-container a.back-link:hover {
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

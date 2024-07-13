@@ -1,0 +1,245 @@
+
+/* Header */
+header {
+    background: #5a9de4;
+    color: #764af0;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+}
+
+header .logo img {
+    max-width: 100px;
+    max-height: 80px;
+    border-radius: 50px;
+    border-color: #4213c4;
+    margin-left: 30px;
+
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #1a1717;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    background-color: #252424;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav ul li a {
+        display: block;
+        /* width: 100%; */
+    }
+}
+
+
+/* Contact Banner */
+.contact-banner {
+    background: url('images/contactbackground.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    
+  }
+  
+  .contact-info {
+    background-color: #fafcfd;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.info-card {
+    flex: 1;
+    margin: 20px;
+    padding: 30px;
+    background-color: #dfdfe9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    text-align: center;
+}
+
+.info-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+  
+}
+
+.info-card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #727ac0;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #161515;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #222121;
+}
+
+.highlighted {
+    background-color: #5d68ce;
+    border-color: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlighted:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-15px);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.map, .contact-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.map {
+    background:  #e6e0e0;/* Placeholder background color */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e6e0e0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #463bdf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background-color: #9190df;
+}
+
+ 
+
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+nav .icons{
+    display:none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .contact-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-banner p {
+        font-size: 1rem;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-details .contact-form {
+        margin-left: 0;
+    }
+}

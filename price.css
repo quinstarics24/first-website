@@ -1,0 +1,196 @@
+/* Center the "Blink Laundry Pricing" heading */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px; /* Adds some space below the heading */
+    color: #333;
+    animation: fadeInDown 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Container to keep content centered and fixed width */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #5a9de4;
+    color: #764af0;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Changed from 'right' to 'center' */
+}
+
+header .logo img {
+    max-width: 200px;
+    max-height: 100px; /* Adjust the height of the logo */
+    border-radius: 50px;
+    border-color: #4213c4;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #1a1717;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px; /* Added padding for better clickability */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover and Active Styles for Nav Links */
+header nav ul li a:hover,
+header nav ul li a:active {
+    background-color: #252424; /* Background on hover and click */
+    color: #fff; /* Text color change on hover and click */
+    border-radius: 4px; /* Slight rounding of corners */
+}
+
+ /* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    header nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+/* Container for cards with flex properties */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual card styling */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+/* Styling for images within cards */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Container for text information in cards */
+.info {
+    padding: 15px;
+}
+
+/* Header text styling in cards */
+.info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Paragraph text styling in cards */
+.info p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #0f0f0f;
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #6028e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #2321b6;
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Animation for fade-in */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

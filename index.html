@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink Laundry house</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Add a link to font-awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+
+
+<!-- Small Header -->
+<div class="small-header">
+    <div class="welcome-message">
+        Welcome to Blink Laundry House
+    </div>
+    <div class="social-icons">
+        <a href="https://wa.me/your-whatsapp-number" target="_blank" class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/your-facebook-page" target="_blank" class="facebook-icon">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="mailto:your-email@example.com" class="email-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Main Header--> 
+<header>
+    <div class="logo">
+        <img src="images/logo.jpg" alt=" Logo">
+    </div>
+    <nav class="navbar">
+        <i class="fas fa-bars icons" onclick="toggleMenu()"></i>
+        <ul class="navbar-nav" id="navbarNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="price.html">Prices</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="resgister.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const navbarNav = document.getElementById('navbarNav');
+            navbarNav.classList.toggle('active');
+        }
+        </script>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero text-black text-center d-flex align-items-center" style="background-image: url('images/background.jpg');">
+        <div class="container">
+            <h1>DO YOUR LAUNDRY SMARTLY!</h1>
+            <p>Your laundry gets delivered to your preferred experts in a click.</p>
+            <button class="btn btn-outline-primary" onclick="window.location.href='service.html'"> REQUEST A SERVICE</button>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section class="about py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="images/about2.jpg" alt="About Blink Laundry House" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>ABOUT BLINK LAUNDRY</h2>
+                <p>Blink Laundry is an online laundry platform in Cameroon. We simplify your laundry routine with convenient pickup and delivery services. Enjoy free pick-up and delivery for your dirty laundry. Using our website, mobile app, or hotline number, you can schedule an order effortlessly. Let us take care of the rest!</p>
+                <button class="btn btn-outline-primary" onclick="window.location.href='about.html'">About Us</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Why Choose Us Section -->
+<section class="why-choose">
+    <div class="container">
+        <h2 class="text-center">WHY CHOOSE US?</h2>
+        <p class="text-center">The freedom of choosing your preferred laundry service provider from our list of experts:</p>
+        <div class="row text-center">
+            <div class="col">
+                <i class="fas fa-shuttle-van fa-4x mb-3 icon-color"></i>
+                <h3>Free Pickup and Delivery</h3>
+                <p>Your Laundry gets picked up and delivered back to your doorstep.</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-dollar-sign fa-4x mb-3 icon-color"></i>
+                <h3>Affordable</h3>
+                <p>No additional cost, you pay just the same as the price set by your chosen provider.</p>
+            </div>
+            <div class="col">
+                <i class="fas fa-check-circle fa-4x mb-3 icon-color"></i>
+                <h3>Quality Assurance</h3>
+                <p>We ensure the best quality service in time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- About Section -->
+<section class="about py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="images/heroes.jpg" alt="About Blink Laundry House" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Your Laundry Heroes!</h2>
+                <p>We're here to take the hassle out of laundry day. Our wash and fold service is all about making your life easier. With our quick and reliable service, you can forget about sorting and folding - we've got you covered. Whether it's your weekly load or a big pile of laundry, we treat it with the utmost care. Let us make laundry day a breeze!</p>
+                <button class="btn btn-outline-primary" onclick="window.location.href='service.html'">get started today</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Laundry Services Section -->
+<section class="laundry-services py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Expert Laundry Services</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/washfold.jpg" alt="Wash and Fold Service" class="card-img-top">
+                <div class="card-body">
+                    <h3>Wash and Fold</h3>
+                    <p>Escape the laundry mountain! Our wash and fold service takes care of everything for you. Simply schedule a pickup, and let us do the rest.</p>
+                    <button class="btn btn-outline-primary" onclick="window.location.href='service.html'">View details</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/mending.jpg" alt="Mending" class="card-img-top">
+                <div class="card-body">
+                    <h3>Mending</h3>
+                    <p>Our expert mending service breathes new life into your favorite clothes. Repairing clothes and textiles that have been damaged or worn out through regular use.</p>
+                    <button class="btn btn-outline-primary" onclick="window.location.href='service.html'">View details</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/iro.jpg" alt="Ironing Service" class="card-img-top">
+                <div class="card-body">
+                    <h3>Ironing</h3>
+                    <p>We use professional techniques to ensure a crisp, flawless finish, leaving you with ready-to-wear clothes that elevate your look and free up your schedule for what matters most.</p>
+                
+                    <button class="btn btn-outline-primary" onclick="window.location.href='service.html'">View details</button>
+                </div>
+            </div>
+        </div>
+        <p class="text-center disclaimer mt-4">Starting at 1000XAF per item. Free pickup and delivery available in selected areas. Prices may vary.</p>
+    </div>
+</section>
+
+<section class="service-steps py-5">
+    <div class="container">
+        <div class="promo-banner text-center py-3 mb-4 bg-primary text-white">
+            <span><strong>✨ 10% OFF your First Order! ✨</strong></span>
+        </div>
+        <h2 class="text-center mb-4">How Our Laundry Service Works</h2>
+        <p class="text-center mb-5">Having fresh, neatly folded laundry delivered right to your doorstep is as simple as 1-2-3!</p>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Schedule</h3>
+                <p>Select a convenient day and time any day of the week for your laundry pickup. 2-day and next day service is available.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Pick Up</h3>
+                <p>Set your bags of dirty laundry out on the porch before your pickup time and we will pick them up right on schedule.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Delivery</h3>
+                <p>You can relax and take a load off! We'll deliver your laundry expertly cleaned and folded right to your door.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="resgister.html" class="btn btn-primary get-started">Get Started</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Request a Service Section -->
+    <section class="request py-5 bg-light text-center">
+        <div class="container">
+            <h2>REQUEST FOR A SERVICE</h2>
+            <p>The freedom of choosing your preferred laundry service provider from our list of experts:</p>
+            
+            <button class="btn btn-outline-primary" onclick="window.location.href='contact.html'">Schedule a Laundry Pickup Today</button>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <div class="reviews-container py-5 text-center bg-white text-black">
+        <div class="container">
+            <h2 class="mb-4">WHAT OUR CUSTOMERS ARE SAYING!</h2>
+            <div id="review" class="review-text mb-4">
+                “I never rate something a 5, until now. The laundry is clean and the wash and fold service is the very best.”
+                <br><br>
+                - Steve G.
+            </div>
+            <div class="navigation">
+                <span class="dot" onclick="showReview(0)"></span>
+                <span class="dot" onclick="showReview(1)"></span>
+                <span class="dot" onclick="showReview(2)"></span>
+                <span class="dot" onclick="showReview(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="column">
+              <h3>QUICK LINKS</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="price.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="resgister.html">Register</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+               
+              </ul>
+            </div>
+            <div class="column">
+              <h3>CONTACT US</h3>
+              <div class="contact-icons">
+                <a href="tel:+237 671-319-479"><i class="fas fa-phone"></i></a>
+                <a href="mailto:support@blinklaundryhouse.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/+237671319479" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
+              
+              <p>support@blinklaundryhouse.com</p>
+              <p>+237 671-319-479</p>
+              <p>Mon - Thurs 8:30am - 8:30pm</p>
+              <p>Fri 10:00am - 8:30pm</p>
+              <p>Sat 8:30am - 5:30pm</p>
+            </div>
+            <div class="column">
+              <h3>CLOSED HOLIDAYS</h3>
+              <ul>
+                <li>New Year's Day</li>
+                <li>Easter Day</li>
+                <li>Independence Day</li>
+                <li>Labor Day</li>
+                <li>Christmas Day</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>POPULAR LOCATIONS</h3>
+              <ul>
+                <li>Yaounde: Biyam-Assi</li>
+                <li>Douala: Bonaberi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center py-2 bg-secondary">
+          <p>Copyright © 2024. All rights reserved.</p>
+        </div>
+      </footer>
+    
+
+    
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

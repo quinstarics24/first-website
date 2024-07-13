@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundry</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="price.html">Prices</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="resgister.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Contact Banner -->
+        <section class="contact-banner">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Contact us</h1>
+            </div>
+        </section>
+
+       <!-- Contact Info -->
+    <section class="contact-info">
+        <h2>Let's Get In Touch</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Yaoundé, Cameroon</p>
+            </div>
+            <div class="info-card highlighted">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Address</h3>
+                <p>support@yourdomain.tld</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+237 671-319-479</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map & Contact Form -->
+        <div class="container ">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0700654386255!2d10.411144!3d3.879441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10611f1a1f6a5a5f%3A0x400c4a6f5f5f5f5f!2sYaound%C3%A9%2C%20Cameroon!5e0!3m2!1sen!2sid!4v1627319460978!5m2!1sen!2sid"
+                    width="200%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+       
+            <div class="contact-form">
+                <form action="php/recept.php" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                 
+                    <input type="text" name="phone" placeholder="Your Phone" required>
+                  
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">submit</button>
+                </form>
+            
+            </div>
+        </div>
+        
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Blink Laundry house. All rights reserved.</p>
+</footer>

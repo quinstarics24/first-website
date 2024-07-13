@@ -1,0 +1,494 @@
+/* Reset some default styling */
+body, ul, li, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+header .logo span strong {
+    color: #ff4081;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff4081;
+}
+
+.header-buttons .button {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: #ff4081;
+    border: 2px solid #ff4081;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.header-buttons .button.primary {
+    background: #ff4081;
+    color: #fff;
+}
+
+.header-buttons .button:hover {
+    background: #ff4081;
+    color: #fff;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('hero-background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 60px; /* Offset for fixed header */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.order-bar {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #ddd;
+}
+
+.order-bar .button.primary {
+    border-radius: 0 25px 25px 0;
+    background: #ff4081;
+    color: #fff;
+    cursor: pointer;
+}
+
+.order-bar .button.primary:hover {
+    background: #e03070;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .header-buttons .button {
+        padding: 5px 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .order-bar input {
+        padding: 5px;
+    }
+    
+    .order-bar .button.primary {
+        padding: 10px 15px;
+    }
+}
+
+
+
+/* Service Steps Section */
+.service-steps {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.promo-banner {
+    background: #00aaff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-steps .content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-steps .content p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.step-number {
+    background: #00aaff;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.5em;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step p {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Get Started Button */
+.button.get-started {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #ff4081;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button.get-started:hover {
+    background: #e03070;
+    transform: scale(1.05);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* style.css */
+.laundry-heroes {
+    display: flex; /* Make the image and text content flow next to each other */
+    flex-direction: row;
+    align-items: center; /* Align content vertically in the center */
+    padding: 50px;
+  }
+  
+  .laundry-heroes img {
+    width: 40%; /* Adjust image width as needed */
+    margin-right: 30px; /* Add margin between image and text */
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  #get-started-button {
+    background-color: #f084e4;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #get-started-button:hover {
+    background-color: #d93e9e;
+  }
+
+
+  /* style.css */
+.laundry-care {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse order on smaller screens */
+    align-items: center; /* Align content vertically in the center */
+    padding: 50px;
+  }
+  
+  /* style.css */
+.laundry-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-gap: 20px; /* Gap between cards */
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text content */
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 200px; /* Adjust max-height as needed */
+    object-fit: cover; /* Crop image to fit within container */
+    margin-bottom: 15px;
+  }
+  
+  .card-content {
+    text-align: left; /* Left-align text within card content */
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #f084e4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d93e9e;
+  }
+  
+
+
+  .laundry-services {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute cards evenly */
+    flex-wrap: wrap; /* Wrap cards to multiple rows if needed */
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    width: 30%; /* Adjust card width as needed */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 200px; /* Adjust max-height as needed */
+    object-fit: cover; /* Crop image to fit within container */
+    margin-bottom: 15px;
+  }
+  
+  .card-content {
+    text-align: left; /* Left-align text within card content */
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #f084e4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d93e9e;
+  }
+  
+  .disclaimer {
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+  
+
+
+
+  /* style.css */
+.laundry-care {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse order on smaller screens */
+    align-items: center; /* Align content vertically in the center */
+    padding: 50px;
+  }
+  
+  .laundry-care img {
+    width: 40%; /* Adjust image width as needed */
+    margin-left: 30px; /* Add margin between text and image */
+  }
+  
+  .text-content {
+    width: 60%; /* Adjust width for text content as needed */
+    color: #fff; /* White text color for light background image */
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Add text shadow for readability */
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); /* Add text shadow for readability */
+  }
+  
+  #get-started-button {
+    background-color: #f084e4;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #get-started-button:hover {
+    background-color: #d93e9e;
+  }
+  
+  /* Media query for screens less than 768px wide */
+  @media only screen and (max-width: 768px) {
+    .laundry-care {
+      flex-direction: column; /* Stack image and text content on small screens */
+      text-align: center; /* Center text content */
+    }
+  
+    .laundry-care img {
+      margin: 0 auto 20px; /* Center image and add margin */
+    }
+  
+    .text-content {
+      color: #333; /* Adjust text color for dark background on small screens */
+    }
+  
+    h1,
+    p {
+      text-shadow: none; /* Remove text shadow on small screens */
+    }
+  }
+
+
+  

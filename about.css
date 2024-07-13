@@ -1,0 +1,270 @@
+General Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+
+/* Center the "Blink Laundry Pricing" heading */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px; /* Adds some space below the heading */
+    color: #333;
+    animation: fadeInDown 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Container to keep content centered and fixed width */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #5a9de4;
+    color: #764af0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Changed from 'right' to 'center' */
+}
+
+header .logo img {
+    max-width: 200px;
+    max-height: 100px; /* Adjust the height of the logo */
+    border-radius: 50px;
+    border-color: #4213c4;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #1a1717;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px; /* Added padding for better clickability */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover and Active Styles for Nav Links */
+header nav ul li a:hover,
+header nav ul li a:active {
+    background-color: #252424; /* Background on hover and click */
+    color: #fff; /* Text color change on hover and click */
+    border-radius: 4px; /* Slight rounding of corners */
+}
+
+ /* For Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    header nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* About Banner Section*/
+.about-banner {
+    position: relative;
+    color: rgb(17, 17, 17);
+    height: 60vh; /* Adjust the height as needed */
+   
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: url('images/about2.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.about-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+.about-banner:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .about-banner .content {
+    z-index: 1;
+    /* text-align: center; */
+  }
+
+.about-banner h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 10px 20px;
+    animation: fadeIn 1s ease;
+  }
+
+
+.about-banner p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #131212;
+    max-width: 600px;
+    margin: 20px auto;
+}
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* About Us Styles */
+  
+  .about-us {
+    padding: 40px;
+    background-color:#bed3e9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  /* Why Blink Section */
+.why-blink {
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.why-blink h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    padding: 0 10px;
+    gap: 10px; /* Add some gap between cards */
+}
+
+.benefits {
+    flex: 1 1 30%; /* Allow flexibility, but ensure 30% width */
+    max-width: 30%; /* Ensure the cards do not exceed 30% of the container */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    margin: 0 5px; /* Add margin to create space between cards */
+}
+
+.benefits:hover {
+    transform: scale(1.05);
+}
+
+.benefits i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.benefits h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefits p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+    .about-banner {
+      height: 50vh;
+    }
+    .about-us, .why-blink {
+      padding: 20px;
+    }
+    .benefits {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits {
+      width: 100%;
+    }
+  }
+  /* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+  
+
+
+
